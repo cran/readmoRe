@@ -22,8 +22,8 @@ A data frame.
 }
 \details{
 Empty columns in Excel sheets are imported to \code{NA} columns in the resulting data frame.
-    Columns that did not have a column name in the spread sheet will result in data frame column names
-    starting with 'X'. \command{rm.empty.cols} makes use of these two criteria to identify columns that
-    can safely be removed from the data frame.
+    If using \code{gdata::read.xls} for reading Excel files, columns that did not have a column name in the
+    spread sheet will result in data frame column names starting with 'X'. \command{rm.empty.cols} makes use
+    of these two criteria to identify columns that can safely be removed from the data frame.
 }
 \keyword{utilities}
